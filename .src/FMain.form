@@ -1,0 +1,44 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,138,109)
+  Background = Color.Background
+  Transparent = True
+  { Label1 Label
+    MoveScaled(-6,-14,145,111)
+    Background = Color.DarkRoyal
+  }
+  { COBRAKAITHEVIDEOGAME TextLabel
+    MoveScaled(40,-5,58,20)
+    Font = Font["URW Gothic,+7"]
+    Text = ("COBRA KAI THE VIDEOGAME")
+    Alignment = Align.Center
+  }
+  { Button1 Button
+    MoveScaled(2,101,20,6)
+    Text = ("Jugar")
+  }
+  { Button2 Button
+    MoveScaled(24,101,20,6)
+    Text = ("Pausar")
+  }
+  { Label2 Label
+    MoveScaled(55,101,30,7)
+    Text = ("Puntos")
+  }
+  { LPuntos Label
+    MoveScaled(71,101,33,7)
+    Text = ("0")
+  }
+  { Crono #Timer
+    #MoveScaled(118,101)
+    Delay = 200
+  }
+  { DrawingArea1 DrawingArea
+    MoveScaled(9,14,119,75)
+  }
+  { ScrollBar1 ScrollBar
+    MoveScaled(131,4,4,90)
+    Drop = True
+  }
+}

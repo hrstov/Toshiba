@@ -1,0 +1,37 @@
+' Gambas class file
+
+Private viborita As Serpiente
+
+Private ipasos As Integer
+
+Public Sub Button1_Click()
+
+  Crono.Enabled = True
+    viborita = New Serpiente(Color.Yellow, 200, 300, 234543, "W")
+    iPasos = 1
+    Crono.Start()
+
+End 
+
+Public Sub Crono_Timer()
+iPasos = iPasos + 1
+
+If iPasos = 3 Then
+  viborita.crecer()
+  iPasos = 1
+Else
+viborita.moverse()
+Endif 
+
+
+ DrawingArea1.Refresh()
+
+End
+
+Public Sub DrawngArea1_Draw()
+
+  If (viborita <> Null) Then 
+    viborita.pintarse(DrawingArea1)
+  Endif
+
+End
